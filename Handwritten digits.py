@@ -16,6 +16,7 @@ numpy.random.seed(7)
 dataset = datasets.load_digits()
 
 #Display the first digit
+print("\nDisplay the first digit")
 plt.figure(1, figsize=(3, 3))
 plt.imshow(dataset.images[-1], cmap=plt.cm.gray_r, interpolation='nearest')
 plt.show()
