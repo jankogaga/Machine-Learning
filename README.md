@@ -11,3 +11,7 @@ In the end, the neural network chooses 3 random examples from dataset and makes 
 Handwritten digits-load mat file.py
 does the same thing as Handwritten digits.py does. It uses MATLAB dataset (ex4data1.mat) used in https://www.coursera.org/learn/machine-learning/programming/Y54Zu/multi-class-classification-and-neural-networks assignment. 
 There are 5000 training examples in ex3data1.mat, where each training example is a 20 pixel by 20 pixel grayscale image of the digit. Each pixel is represented by a floating point number indicating the grayscale intensity at that location.
+
+Data scrape from maxi-shop.py
+does a simple data scrape from web page using BeautifulSoup library.
+
