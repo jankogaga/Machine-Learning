@@ -38,7 +38,7 @@ def get_top_n(predictions, n=10):
 
 # First train an SVD algorithm on the movielens dataset.
 file_path = os.path.expanduser('./input/user_artists.dat')
-reader = Reader(line_format='user item rating', sep='\t')
+reader = Reader(line_format='user item rating', sep='\t', rating_scale=(1, 1000000))
 data = Dataset.load_from_file(file_path, reader=reader)
 
 trainset = data.build_full_trainset()
