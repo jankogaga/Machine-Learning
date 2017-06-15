@@ -52,12 +52,13 @@ predictions = algo.test(testset)
 top_n = get_top_n(predictions, n=10)
 
 # Print the recommended items for each user
-for uid, user_ratings in top_n.items():
-    print(uid, [iid for (iid, _) in user_ratings])
+#for uid, user_ratings in top_n.items():
+#    print(uid, [iid for (iid, _) in user_ratings])
 
 #E.g.: for the user 1150, recommended items are:
-
-print(1150, [iid for (iid, _) in user_ratings])
+for uid, user_ratings in top_n.items():
+	if uid == '1150':
+		print(uid, [iid for (iid, _) in user_ratings])
 
 # Evaluate performances of our algorithm on the dataset.
 data.split(n_folds=3)
