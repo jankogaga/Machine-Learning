@@ -18,7 +18,7 @@ Data scraper for maxi-shop.py
 
 does a simple data scrape from web page using BeautifulSoup library.
 
-Recommendation for music.py
+Recommendation for books.py
 
 uses Surprise library. It is an easy-to-use Python scikit for recommender systems.
 Installation guide is available at http://surpriselib.com/.
