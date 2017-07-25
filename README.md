@@ -22,11 +22,11 @@ Recommendation for music.py
 
 uses Surprise library. It is an easy-to-use Python scikit for recommender systems.
 Installation guide is available at http://surpriselib.com/.
-Dataset used is Last.FM, downloaded from https://grouplens.org/datasets/hetrec-2011/.
-We first train an SVD algorithm on the whole dataset, and then predict all the weights (number of listenings) for the pairs (user, artists) that are not in the training set. We then retrieve the top-10 prediction for each user.
-Header from user_artists.dat has been removed in order to parse the file.
-Since I have memory error caused by huge used matrices, I cut the dataset and work just with first 10000 records.
+Dataset has been downloaded from http://www2.informatik.uni-freiburg.de/~cziegler/BX/
+We first train an SVD algorithm on the whole dataset, and then predict all the ratings for the pairs (user, books) that are not in the training set. We then retrieve the top-10 prediction for each user.
+Since I have memory error caused by huge used matrices, I cut the dataset and work just with first 5000 records.
+The quate marks (") have been removed.
 The evaluation of the algorithm is the following:
-Mean RMSE: 3394.5676
-Mean MAE : 734.3299
+Mean RMSE: 3.3920
+Mean MAE : 2.7805
 
