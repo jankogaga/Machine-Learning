@@ -55,6 +55,15 @@ top_n = get_top_n(predictions, n=10)
 for uid, user_ratings in top_n.items():
     print(uid, [iid for (iid, _) in user_ratings])
 
+# Show the book with certain ISBN number
+path = './input/BX-CSV-Dump/BX-Books.csv'
+with open(path, 'r') as f:
+    lines = [l for l in f]
+
+isbn = input("Enter ISBN: ")
+matching = [s for s in lines if isbn in s]
+print (matching)
+
 # Evaluate performances of our algorithm on the dataset.
 data.split(n_folds=3)
 perf = evaluate(algo, data, measures=['RMSE', 'MAE'])
