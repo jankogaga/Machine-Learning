@@ -30,3 +30,6 @@ The evaluation of the algorithm is the following:
 Mean RMSE: 3.3920
 Mean MAE : 2.7805
 
+Personal_Assistant_speech_recognition.py
+
+calls wolfram alpha and wikipedia API, gets an answer. Without typing in the text box (if first press enter, a speech recognition module is being used). Please note that app_id for wolfram alpha API is hidden. It can be obtained free of charge at https://developer.wolframalpha.com/portal/signin.html.  
